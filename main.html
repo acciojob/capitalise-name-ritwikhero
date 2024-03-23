@@ -3,9 +3,13 @@
   <head>
   </head>
   <body>
-    Enter your name: <input type="text" id="fname">
+    Enter your name: <input type="text" id="fname" onblur="capitaliseName()">
 	
-	<script type="text/javascript" src="./script.js">
+	<script>
+		function capitaliseName() {
+		let input = document.getElementById('fname');
+		input.value = input.value.toUpperCase();
+		}
 	</script>
   </body>
 </html>
